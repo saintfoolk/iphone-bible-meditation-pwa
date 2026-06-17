@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "bible-data-manifest",
-  "generatedAt": "2026-06-17T06:25:34.321Z",
+  "generatedAt": "2026-06-17T07:33:14.655Z",
   "bdfFolder": "D:\\컴퓨터 백업\\bible",
   "sourceRoot": ".tmp/bible-sources",
   "totalTranslations": 2,
@@ -26,8 +26,8 @@
       ],
       "verseCount": 31102,
       "file": "translations/korhrv.json",
-      "byteLength": 4892587,
-      "sha256": "311b5baaad7d566e8a2feffdeebe3889b655d88408a6f5fbf5f552ae0ead3c43",
+      "byteLength": 4892581,
+      "sha256": "ff697dc8c2f159e0d0ec74562e23d42fa986bf7b68073690440b26ba89e4558b",
       "bookCount": 66,
       "bookOrders": [
         1,
@@ -179,7 +179,7 @@
       "verseCount": 31098,
       "file": "translations/engwebp.json",
       "byteLength": 4492292,
-      "sha256": "ec4d365ab45ac49425774d4dabeb4fc8f11b3d7438814822c14b097169e0ece3",
+      "sha256": "6b6298964ba9d80b56139e97ede3ef0ea73cb9c59414d9ec314d9db10637b5e1",
       "bookCount": 66,
       "bookOrders": [
         1,
