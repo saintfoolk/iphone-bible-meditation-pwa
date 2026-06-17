@@ -1,4 +1,4 @@
-const CACHE_NAME = "bible-meditation-app-v7";
+const CACHE_NAME = "bible-meditation-app-v8";
 const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/u, "");
 const scopedPath = (path) => `${SCOPE_PATH}${path}`;
 const APP_SHELL = [
