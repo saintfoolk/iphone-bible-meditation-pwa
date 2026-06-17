@@ -1,44 +1,51 @@
 {
-  "id": "/",
+  "id": "/iphone-bible-meditation-pwa/",
   "name": "깊은샘 묵상",
   "short_name": "깊은샘",
   "description": "개인 성경 자료를 읽고 성서일과와 함께 묵상하는 앱",
   "lang": "ko-KR",
-  "start_url": "/?source=pwa",
-  "scope": "/",
+  "start_url": "/iphone-bible-meditation-pwa/?source=pwa",
+  "scope": "/iphone-bible-meditation-pwa/",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait-primary",
   "background_color": "#f8fafc",
   "theme_color": "#0f766e",
-  "categories": ["books", "education", "lifestyle"],
+  "categories": [
+    "books",
+    "education",
+    "lifestyle"
+  ],
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/iphone-bible-meditation-pwa/icon.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/iphone-bible-meditation-pwa/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-192.png",
+      "src": "/iphone-bible-meditation-pwa/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/iphone-bible-meditation-pwa/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/maskable-icon-512.png",
+      "src": "/iphone-bible-meditation-pwa/icons/maskable-icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -48,20 +55,35 @@
     {
       "name": "성경 읽기",
       "short_name": "읽기",
-      "url": "/",
-      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+      "url": "/iphone-bible-meditation-pwa/",
+      "icons": [
+        {
+          "src": "/iphone-bible-meditation-pwa/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "성서일과",
       "short_name": "정과",
-      "url": "/lectionary",
-      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+      "url": "/iphone-bible-meditation-pwa/lectionary",
+      "icons": [
+        {
+          "src": "/iphone-bible-meditation-pwa/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "오늘의 묵상",
       "short_name": "묵상",
-      "url": "/meditation/today",
-      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+      "url": "/iphone-bible-meditation-pwa/meditation/today",
+      "icons": [
+        {
+          "src": "/iphone-bible-meditation-pwa/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }

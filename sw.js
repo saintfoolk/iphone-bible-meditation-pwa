@@ -1,19 +1,21 @@
-const CACHE_NAME = "bible-meditation-app-v6";
+const CACHE_NAME = "bible-meditation-app-v7";
+const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/u, "");
+const scopedPath = (path) => `${SCOPE_PATH}${path}`;
 const APP_SHELL = [
-  "/",
-  "/library",
-  "/lectionary",
-  "/search",
-  "/meditation/today",
-  "/journal",
-  "/manifest.webmanifest",
-  "/icon.svg",
-  "/apple-touch-icon.png",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
-  "/icons/maskable-icon-512.png",
-  "/icons/apple-touch-icon.png",
-  "/sounds/bell.mp3"
+  scopedPath("/"),
+  scopedPath("/library"),
+  scopedPath("/lectionary"),
+  scopedPath("/search"),
+  scopedPath("/meditation/today"),
+  scopedPath("/journal"),
+  scopedPath("/manifest.webmanifest"),
+  scopedPath("/icon.svg"),
+  scopedPath("/apple-touch-icon.png"),
+  scopedPath("/icons/icon-192.png"),
+  scopedPath("/icons/icon-512.png"),
+  scopedPath("/icons/maskable-icon-512.png"),
+  scopedPath("/icons/apple-touch-icon.png"),
+  scopedPath("/sounds/bell.mp3")
 ];
 
 self.addEventListener("install", (event) => {
@@ -52,7 +54,7 @@ async function networkFirst(request) {
 
     return response;
   } catch {
-    return (await cache.match(request)) || cache.match("/");
+    return (await cache.match(request)) || cache.match(scopedPath("/"));
   }
 }
 
@@ -69,7 +71,7 @@ async function staleWhileRevalidate(request) {
     })
     .catch(() => null);
 
-  return cached || fresh || cache.match("/");
+  return cached || fresh || cache.match(scopedPath("/"));
 }
 
 self.addEventListener("fetch", (event) => {
@@ -80,7 +82,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (url.pathname.startsWith("/api/")) {
+  if (url.pathname.startsWith(scopedPath("/api/"))) {
     return;
   }
 

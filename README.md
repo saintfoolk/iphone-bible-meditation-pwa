@@ -1,12 +1,16 @@
-﻿# 깊은샘 묵상 iPhone PWA
+# 깊은샘 묵상 iPhone PWA
 
-아이폰 Safari에서 홈 화면에 추가해 사용하는 깊은샘 묵상 PWA 정적 배포본입니다.
+GitHub Pages용 깊은샘 묵상 iPhone PWA 정적 배포본입니다.
 
-## 사용 방법
+## 실행 주소
 
-1. GitHub Pages 또는 HTTPS 서버로 이 저장소의 루트 폴더를 배포합니다.
-2. 아이폰 Safari에서 배포 주소를 엽니다.
-3. 공유 버튼을 누르고 `홈 화면에 추가`를 선택합니다.
+https://saintfoolk.github.io/iphone-bible-meditation-pwa/
+
+## iPhone 설치
+
+Safari에서 위 주소를 열고 공유 버튼 -> 홈 화면에 추가를 선택합니다.
+
+자세한 사용법과 성경 JSON 추가 방법은 [docs/iphone-pwa-usage.md](docs/iphone-pwa-usage.md)를 보세요.
 
 ## 포함된 기본 성경
 
